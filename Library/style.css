@@ -1,0 +1,134 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+header {
+    background-color: chocolate;
+    padding: 20px;
+    box-shadow: black 0px 2px 5px;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form {
+    display: none;
+    background-color: rgb(190, 73, 0);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+#createBook {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    transition: 0.3s;
+}
+
+#createBook:hover{
+    background-color: rgba(165, 165, 165, 0.35);
+}
+
+button {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+}
+
+footer {
+    padding: 50px;
+    background-color: chocolate;
+    box-shadow: black 0px 2px 5px 5px;
+}
+
+form > h4 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+input {
+    width: 200px;
+    height: 30px;
+    border: 2px gray solid;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none
+}
+
+#read {
+    width: 25px;
+    height: 25px;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+}
+
+label > p {
+    font-size: 20px;
+    font-weight: 600
+}
+
+input::placeholder {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#library {
+    align-self: start;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.book {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(190, 73, 0);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.book > p {
+    font-size: 20px;
+    font-weight: bold;
+}
